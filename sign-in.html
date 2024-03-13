@@ -29,20 +29,30 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link mx-2" href="services.html">Services <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="our-platform.html">Our Platform</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" href="providers.html">Providers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="health-plan.html">Health Plan</a>
+                        <a class="nav-link mx-2" href="health-care.html">Health Care</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="care-advocate.html">Care Advocate</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="patients.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Patients</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="care-advocate.html">Care Advocate</a>
+                        </div>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link mx-2" href="patients.html">Patients</a>
+                    </li> -->
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link mx-2" href="suppliers.html">Suppliers <span class="sr-only">(current)</span></a>
+                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="suppliers.html">Suppliers</a>
+                        <a class="nav-link mx-2 px-4 yellow-button" href="sign-in.html">Sign in</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,73 +79,72 @@
             </div>
         </nav>
     </header>
-    <main class="services">
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col four-section">
-                        <span class="mb-3">OUR SERVICES</span>
-                        <span class="mb-5">We align incentives across the home-based care ecosystem.</span>
-
-                        <div class="row mb-5">
-                            <div class="col-12 col-md-5 position-relative mb-5">
-                                <img src="images/services-1.jpg" class="card-img-top" alt="...">
-                                <div class="services-square d-none d-md-block d-lg-block"></div>
-                            </div>
-                            <div class="col-12 col-md-1"></div>
+    <main class="sign-in mb-5">
+        <div class="container">
+            <div class="card">
+                <div class="user signup_form">
+                    <form class="form" method="post">
+                        <!-- <div class="flag-text"> <select>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Other</option>
+                            </select> </div> -->
+                        <div class="text_signup">
+                            <h4>Register Now</h4>
+                            <h2>Sign up for free</h2>
+                            <p>Already have an account <a href="#" class="signin-click">Sign In</a></p>
+                        </div>
+                        <div class="row">
                             <div class="col-12 col-md-6">
-                                <h1 class="mb-5">Care Advocate</h1>
-                                <h2 class="mb-4">Lorem Ipsum is simply dummy text of the printing industry.</h2>
-                                <p class="mb-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
+                                <div class="input-text-signup"> 
+                                    <input type="text" id="signin_first_name" required> <i class="fa fa-user"></i>
+                                    <label for="signin_first_name">First Name</label> 
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="row mt-5 pt-5">
-                            <div class="col-12 order-2 order-sm-2 col-md-5 order-md-1">
-                                <h1 class="mb-5 mt-3">Health Plans</h1>
-                                <h2 class="mb-4">Lorem Ipsum is simply dummy text of the printing industry.</h2>
-                                <p class="mb-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                                <p class="mb-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                                <p class="mb-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                            <div class="col-12 order-0 order-sm-0 col-md-1 order-md-2"></div>
-                            <div class="col-12 order-1 order-sm-1 col-md-6 order-md-3 mb-5">
-                                <img src="images/services-2.jpg" class="card-img-top" alt="...">
-                            </div>
-                        </div>
-
-                        <div class="row my-5">
-                            <div class="col-12 col-md-5 position-relative mb-5">
-                                <img src="images/personal-care-assistant.jpg" class="card-img-top" alt="...">
-                                <div class="services-square d-none d-md-block d-lg-block"></div>
-                            </div>
-                            <div class="col-12 col-md-1"></div>
                             <div class="col-12 col-md-6">
-                                <h1>Personal Care Assistant</h1>
-                                <h2 class="mb-4">Lorem Ipsum is simply dummy text of the printing industry.</h2>
-                                <p class="mb-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
+                                <div class="input-text-signup"> 
+                                    <input type="text" id="signin_last_name" required> <i class="fa fa-user"></i>
+                                    <label for="signin_last_name">Last Name</label> 
+                                </div>
                             </div>
                         </div>
-
-                        <div class="row mt-5 pt-5">
-                            <div class="col-12 order-2 order-sm-2 col-md-5 order-md-1">
-                                <h1 class="mb-5 mt-3">Providers</h1>
-                                <h2 class="mb-4">Lorem Ipsum is simply dummy text of the printing industry.</h2>
-                                <p class="mb-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                            <div class="col-12 order-0 order-sm-0 col-md-1 order-md-2"></div>
-                            <div class="col-12 order-1 order-sm-1 col-md-6 order-md-3 mb-5">
-                                <img src="images/providers.jpg" class="card-img-top" alt="...">
-                                
-                            </div>
+                        <div class="input-text-signup"> <input type="text" required> <i class="fas fa-at"></i>
+                            <label>E-mail</label> </div>
+                        <div class="input-text-signup"> <input type="password" id="password_input" required> <i
+                                class="fa fa-eye-slash"></i> <label>Password</label> </div>
+                        <div class="signup-button"> <button type="submit">Sign up</button> </div>
+                        <div class="policy">
+                            <p>By clicking Sign up,you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a>.</p>
                         </div>
-                    </div>
+                    </form>
+                    <div class="image-box"> <img src="images/signin1.jpg"> </div>
+                </div>
+                <div class="user signin_form">
+                    <div class="image-box"> <img src="images/signin2.jpg"> </div>
+                    <form class="form">
+                        <!-- <div class="flag-text"> <select>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Other</option>
+                            </select> </div> -->
+                        <div class="text_signup">
+                            <h4>Start your journey</h4>
+                            <h2>Sign up to Ocula</h2>
+                            <p>Don't have an account? <a href="#" class="signup-click">Sign Up</a></p>
+                        </div>
+                        <div class="input-text-signup"> 
+                            <input type="text" id="signup_email" required> <i class="fas fa-at"></i>
+                            <label for="signup_email">E-mail</label> 
+                        </div>
+                        <div class="input-text-signup"> 
+                            <input type="password" id="password_input_signin" required> <i class="fa fa-eye-slash change_eye"></i> 
+                            <label for="password_input_signin">Password</label> 
+                        </div>
+                        <div class="signup-button"> <button type="submit">Sign in</button> </div>
+                        <div class="policy">
+                            <p>By clicking Sign up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a>. </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -197,7 +206,7 @@
                         <span class="mb-3 d-block text-uppercase text-white">PARTNERS</span>
                         <ul class="footer-list">
                             <li><a href="#">Providers</a></li>
-                            <li><a href="#">Health Plan</a></li>
+                            <li><a href="health-care.html">Health Care</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-3">
@@ -230,6 +239,58 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script>
+        var signin_click = document.querySelector(".signin-click");
+        var card_toggle = document.querySelector(".card");
+        signin_click.addEventListener('click', function () {
+            card_toggle.classList.toggle('active');
+        });
+
+
+        var signup_click = document.querySelector(".signup-click");
+        var card_toggle = document.querySelector(".card");
+        signup_click.addEventListener('click', function () {
+
+            card_toggle.classList.toggle('active');
+        });
+
+        var click_eye_signin = document.querySelector(".change_eye");
+        var input_signin = document.querySelector("#password_input_signin");
+        var eye_signin = document.querySelector(".change_eye");
+        click_eye_signin.addEventListener('click', function () {
+            if (input_signin.type == 'password') {
+                input_signin.type = 'text'
+                input_signin.classList.add('warning');
+                eye_signin.classList.remove('fa-eye-slash')
+                eye_signin.classList.add('fa-eye')
+            }
+            else {
+                input_signin.type = 'password'
+                input_signin.classList.remove('warning');
+                eye_signin.classList.add('fa-eye-slash')
+                eye_signin.classList.remove('fa-eye')
+            }
+        });
+
+
+        var click_eye = document.querySelector(".fa-eye-slash");
+        var input = document.querySelector("#password_input");
+        var eye = document.querySelector(".fa-eye-slash");
+        click_eye.addEventListener('click', function () {
+            if (input.type == 'password') {
+                input.type = 'text'
+                input.classList.add('warning');
+                eye.classList.remove('fa-eye-slash')
+                eye.classList.add('fa-eye')
+            }
+            else {
+                input.type = 'password'
+                input.classList.remove('warning');
+                eye.classList.add('fa-eye-slash')
+                eye.classList.remove('fa-eye')
+            }
+        });
+    </script>
 </body>
 
 </html>

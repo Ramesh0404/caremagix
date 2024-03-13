@@ -171,6 +171,15 @@ ul.footer-list li a { color: #fff; }
 .providers h2 { font-size: clamp(20px, 4vw, 35px); font-weight: normal; }
 .care-adv-bg { background: url(../images/care-advocate-bg.jpg) no-repeat center bottom; background-size: cover; }
 
+.llmbtn { position: relative; padding-right: 30px; }
+.llmbtn::after { position: absolute; content: "\f30c"; font-family: 'Font Awesome 5 Free'; right: 10px; top: 50%; transform: translateY(-50%); opacity: 0; }
+.llmbtn:hover::after { opacity: 1; }
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+
 /* 
 ---------------------------------------------
 banner
@@ -286,6 +295,267 @@ banner
   margin-bottom: 20px;
 }
 
+.sign-in .container {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ccc */
+}
+
+.sign-in .card {
+  height: 550px;
+  width: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Poppins', sans-serif
+}
+
+.sign-in .card .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex
+}
+
+.sign-in .image-box {
+  width: 50%;
+  height: 100%;
+  overflow: hidden
+}
+
+.sign-in .image-box img {
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%;
+  height: 100%
+}
+
+.sign-in .user .form {
+  width: 50%
+}
+
+.sign-in .signup_form .image-box {
+  position: absolute;
+  right: 0;
+  transition: all 1s;
+  z-index: 1
+}
+
+.sign-in .card.active .signup_form .image-box {
+  right: 100%
+}
+
+.sign-in .card.active .signup_form .form {
+  left: 100%
+}
+
+.sign-in .card .signup_form .form {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px 30px;
+  left: 0;
+  box-sizing: border-box;
+  transition: all 1s;
+  z-index: 1;
+  height: 100%
+}
+
+.sign-in .flag-text {
+  position: relative
+}
+
+.sign-in .flag-text select {
+  height: 30px;
+  width: 100px;
+  background-color: #eff5fe;
+  outline: 0;
+  border: none;
+  font-size: 12px;
+  cursor: pointer
+}
+
+.sign-in .text_signup {
+  margin-top: 20px
+}
+
+.sign-in .text_signup h4 {
+  color: #7870a3
+}
+
+.sign-in .text_signup h2 {
+  color: #201665
+}
+
+.text_signup p {
+  font-size: 12px;
+  font-weight: 700
+}
+
+.sign-in .text_signup p a {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer
+}
+
+.sign-in .input-text-signup {
+  position: relative;
+  margin-top: 30px
+}
+
+.sign-in input[type="text"] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: 0;
+  border: 1px solid #cccadc;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 20px;
+  box-sizing: border-box
+}
+
+.sign-in input[type="password"] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: 0;
+  border: 1px solid #cccadc;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 24px;
+  box-sizing: border-box
+}
+
+.sign-in .input-text-signup i {
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  color: #6b6589;
+  cursor: pointer;
+  font-size: 13px
+}
+
+.sign-in .fa-eye {
+  position: absolute;
+  top: 12px;
+  right: 8px
+}
+
+.sign-in .input-text-signup label {
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  font-size: 12px;
+  transition: all 0.5s;
+  pointer-events: none
+}
+
+.sign-in .input-text-signup input:focus~label,
+.sign-in .input-text-signup input:valid~label {
+  top: -16px;
+  font-weight: 700;
+  color: #7187d2
+}
+
+.sign-in .signup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px
+}
+
+.sign-in .signup-button button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #3e66f7;
+  cursor: pointer;
+  transition: all 0.5s
+}
+
+.sign-in .signup-button button:hover {
+  background-color: blue
+}
+
+.sign-in .policy {
+  margin-top: 20px
+}
+
+.sign-in .policy p {
+  font-size: 12px;
+  font-weight: 700
+}
+
+.sign-in .policy p a {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer
+}
+
+.sign-in .warning {
+  border: 1px solid red !important
+}
+
+.sign-in .signin_form .form {
+  background-color: #fff;
+  padding: 20px 30px;
+  left: 0;
+  box-sizing: border-box;
+  transition: all 1s
+}
+
+.fa-microphone-alt { cursor: pointer; }
+
+.start-now-wrap { background: url(../images/start-now-bg.jpg) no-repeat center center; background-size: cover; }
+
+.c2a8 h1,
+.c2a8 h2,
+.c2a8 h3,
+.c2a8 h4,
+.c2a8 h5,
+.c2a8 h6 {
+    color: #3e4555;
+}
+
+.c2a8 .subtitle {
+    line-height: 24px;
+}
+
+.c2a8 .bg-danger-gradiant {
+    background: #FFEB3B;
+    background: -webkit-linear-gradient(legacy-direction(to right), #FFEB3B 0%, #8BC34A 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#FFEB3B), to(#8BC34A));
+    background: -webkit-linear-gradient(left, #FFEB3B 0%, #8BC34A 100%);
+    background: -o-linear-gradient(left, #FFEB3B 0%, #8BC34A 100%);
+    background: linear-gradient(to right, #FFEB3B 0%, #8BC34A 100%);
+}
+
+.c2a8 .both-space {
+    margin: 80px 0;
+}
+
+.c2a8 .btn-md {
+    padding: 15px 45px;
+    font-size: 16px;
+}
+
+.c2a8 .text-box {
+    padding: 30px 20px;
+}
+
+.c2a8 .op-5 {
+    opacity: 0.5;
+}
+
 /* 
 ---------------------------------------------
 responsive
@@ -313,6 +583,23 @@ responsive
     text-align: center;
   }
   .main-banner .left-content .thumb img { margin-bottom: 3rem; }
+}
+
+@media(max-width:690px){
+  .sign-in .container{
+      height:scroll;
+  }
+  .sign-in .card{
+      max-width:350px;
+      height: 600px;
+  }
+  .sign-in .image-box{
+      display:none;
+  }
+  .sign-in .user .form {
+      width:100%;
+       height:scroll;
+  }        
 }
 
 @media(max-width: 575.5px){
