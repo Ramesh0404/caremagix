@@ -517,6 +517,8 @@ banner
 
 .start-now-wrap { background: url(../images/start-now-bg.jpg) no-repeat center center; background-size: cover; }
 
+#SvgjsG1012, #SvgjsG1013 { fill: green; -webkit-text-stroke: green 1px; }
+
 .c2a8 h1,
 .c2a8 h2,
 .c2a8 h3,
