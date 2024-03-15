@@ -519,6 +519,8 @@ banner
 
 #SvgjsG1012, #SvgjsG1013 { fill: green; -webkit-text-stroke: green 1px; }
 
+.font-caremagix { font-size: clamp(16px, 4vw, 25px); }
+
 .c2a8 h1,
 .c2a8 h2,
 .c2a8 h3,
