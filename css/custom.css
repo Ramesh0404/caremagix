@@ -513,6 +513,8 @@ banner
   transition: all 1s
 }
 
+.personal-care h2 { font-weight: normal; }
+
 .fa-microphone-alt { cursor: pointer; }
 
 .start-now-wrap { background: url(../images/start-now-bg.jpg) no-repeat center center; background-size: cover; }
