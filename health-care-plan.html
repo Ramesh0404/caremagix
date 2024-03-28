@@ -250,55 +250,59 @@ immediate insights into patients medical benefits with simplified Q&A.
                         <p>Interested in our solution Or Care for a demo? Fill in your information so we can send you more information</p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <form method="post">
+                        <form action="https://getform.io/f/pbmqdljb" method="post" id="healthcareplan">
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="health_first_name">First Name<span
+                                        <label for="firstname">First Name<span
                                                 class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" id="health_first_name" required>
+                                        <input type="text" class="form-control" id="firstname" name="firstname" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="health_last_name">Last Name<span
+                                        <label for="lastname">Last Name<span
                                                 class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" id="health_last_name" required>
+                                        <input type="text" class="form-control" id="lastname" name="lastname" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="health_email">Email<span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control" id="health_email" required>
+                                        <label for="email">Email<span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="health_phone">Phone<span class="text-danger">*</span></label>
-                                        <input type="number" class="form-control" id="health_phone" required>
+                                        <label for="phone">Phone<span class="text-danger">*</span></label>
+                                        <input type="number" class="form-control" id="phone" name="phone" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <label for="health_subject">Subject<span class="text-danger">*</span></label>
-                                        <input type="number" class="form-control" id="health_subject" required>
+                                        <label for="subject">Subject<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="subject" name="subject" required>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <label for="health_message">Message<span class="text-danger">*</span></label>
-                                        <textarea type="number" class="form-control" id="health_message" cols="40"
+                                        <label for="message">Message<span class="text-danger">*</span></label>
+                                        <textarea type="text" class="form-control" id="message" name="message" cols="40"
                                             rows="3" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
                                         <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="sus_check" style="width: 15px; height: 15px;">
-                                            <label class="form-check-label" for="sus_check">Subscribe to our email newsletter</label>
+                                            <!-- checkbox handle -->
+                                            <input type="checkbox" class="form-check-input" id="suscribe" name="subscribe" value="yes" checked style="width: 15px; height: 15px;">
+                                            <input type="hidden" class="form-check-input" id="suscribe" name="subscribe" value="no" style="width: 15px; height: 15px;">
+                                            <label class="form-check-label" for="suscribe">Subscribe to our email newsletter</label>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- add hidden Honeypot input to prevent spams -->
+                                <input type="hidden" name="_gotcha" style="display:none !important">
                                 <div class="col-12">
                                     <button type="submit" class="btn yellow-button">Submit</button>
                                 </div>
@@ -364,17 +368,18 @@ immediate insights into patients medical benefits with simplified Q&A.
                     </div>
                     <div class="col-12 col-md-4">
                         <span class="mb-3 d-block text-uppercase text-white">SUBSCRIBE FOR THE LATEST UPDATES</span>
-                        <form class="mr-auto w-75" method="post">
+                        <form action="https://getform.io/f/qaloldeb" class="mr-auto w-75" method="post" id="suscribeForm">
                             <div class="form-group">
-                                <label for="sus_fullname" class="text-white">Full Name<span
+                                <label for="fullname" class="text-white">Full Name<span
                                         class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="sus_fullname" required>
+                                <input type="text" class="form-control" id="fullname" name="fullname" required>
                             </div>
                             <div class="form-group">
-                                <label for="sus_email" class="text-white">Email<span
-                                        class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="sus_email" required>
+                                <label for="email" class="text-white">Email<span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" required>
                             </div>
+                            <!-- add hidden Honeypot input to prevent spams -->
+                            <input type="hidden" name="_gotcha" style="display:none !important">
                             <button type="submit" class="btn yellow-button">Submit</button>
                         </form>
                     </div>
@@ -422,57 +427,7 @@ immediate insights into patients medical benefits with simplified Q&A.
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            // Add minus icon for collapse element which is open by default
-            $(".collapse.show").each(function () {
-                $(this)
-                    .prev(".card-header")
-                    .find(".fa")
-                    .addClass("fa-minus")
-                    .removeClass("fa-plus");
-            });
-
-            // Toggle plus minus icon on show hide of collapse element
-            $(".collapse")
-                .on("show.bs.collapse", function () {
-                    $(this)
-                        .prev(".card-header")
-                        .find(".fa")
-                        .removeClass("fa-plus")
-                        .addClass("fa-minus");
-                })
-                .on("hide.bs.collapse", function () {
-                    $(this)
-                        .prev(".card-header")
-                        .find(".fa")
-                        .removeClass("fa-minus")
-                        .addClass("fa-plus");
-                });
-        });
-
-    </script>
-
-<script>
-    $(document).ready(function () {
-        // Smooth scroll to the anchor when the link is clicked
-        $('a[href^="#"]').on('click', function (event) {
-            event.preventDefault();
-
-            var target = this.hash;
-            var $target = $(target);
-
-            // Scroll animation with a duration of 800 milliseconds (adjust as needed)
-            $('html, body').animate({
-                'scrollTop': $target.offset().top
-            }, 800, 'swing', function () {
-                window.location.hash = target; // Update the URL hash
-            });
-        });
-
-    });
-</script>
+    <script src="js/custom.js"></script>
 
 </body>
 
