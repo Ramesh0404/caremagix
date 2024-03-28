@@ -46,6 +46,14 @@ $("#suscribeForm").submit(function (e) {
         });
 });
 
+$('#subscribeCheckbox').change(function(){
+    if($(this).is(":checked")) {
+        $('[name="subscribe"]').val("yes");
+    } else {
+        $('[name="subscribe"]').val("no");
+    }
+});
+
 $("#healthcareplan").submit(function (e) {
     e.preventDefault();
     var action = $(this).attr("action");
